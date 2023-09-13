@@ -153,6 +153,8 @@ As above, `startup` causes the methods to be run as soon as the page is loaded.
 `__.switch(on, off)` applies '.hidden' to the `off` divs and
 removes it from the `on` divs (in order to show them).
 
+This requires the Recaptcha helper.
+
 ```javascript
 <form
     submit=__.recaptcha,__.scrape,__.post,__.switch
