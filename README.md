@@ -26,6 +26,8 @@ Popstart offers a straightforward visual representation of exactly what events a
 * Automatic function binding is optimized for larger apps
 * optimized for SPA's, but also works well with page-oriented applications
 
+Popstart's power is in its function (promise) chaining and the ability to define a flow for what should happen during an event from start to finish, with automatic and customizable error handling as well.
+
 
 ## How it Works
 
