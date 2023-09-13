@@ -198,9 +198,9 @@ non-form `<button click=...>` instead.
 Download `popstart.js`, `popstart-utils.js` (if desired), and any helpers you need (or just clone this repository) and just add to the end of your HTML:
 
 ```html
-<script src=/js/popstart/popstart.js>
-<script src=/js/popstart/popstart-utils.js>
-<script src=/js/popstart/helpers/recaptcha.js>
+<script src=/js/popstart/popstart.js></script>
+<script src=/js/popstart/popstart-utils.js></script>
+<script src=/js/popstart/helpers/recaptcha.js></script>
 ```
 
 ## Contributing
