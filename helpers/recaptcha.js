@@ -2,10 +2,11 @@
  * Example:
  * <div
  *		submit=__.recaptcha,__.scrape,__.post,__.switch
- *		recaptcha-sitekey=6LeojANnhXoAfMgAAAA-RUGAzcU4herTfjNNg-l_
+ *		recaptcha-sitekey=6LeoAAAA-RUGAjNNg-l_
  *		recaptcha-action=signup
+ * Replace 6LeoAAAA-RUGAjNNg-l_ with your reCAPTCHA key.
  * Don't forget:
- * <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
+ * <script src="https://www.google.com/recaptcha/api.js?render=6LeoAAAA-RUGAjNNg-l_"></script>
  *
  */
 
