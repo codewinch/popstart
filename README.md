@@ -1,7 +1,6 @@
 # Popstart
 
-Popstart is a library for rapid JS front-end development.
-
+Popstart is a library for rapid JS front-end development. 
 This is a brand-new project, CONTRIBUTIONS GREATLY APPRECIATED!
 
 ## What is Popstart™?
@@ -213,6 +212,32 @@ Please submit a pull request to the main branch.
 
 Popstart is MIT licensed.
 
-## Who?
+## FAQ:
+
+#### Q. Where is this from?
+
+A. Popstart draws inspiration from AlpineJS, HTMX, Angular, and even jQuery and Moo from back in the day; if this isn't what you're looking for, check out one of those or one of the heavier alternatives like Vue/React.
+
+#### Q. Where's the router?
+
+A. It would be easy to code as a helper, but there is no router right now. You may not need one if you use `startup=` effectively.
+
+#### Q. I don't like these `click=dosomething` attributes in my pristine HTML!
+
+A. You can preface them with `x-` or `data-`, like `x-click=` or `data-click=`
+
+#### Q. Does this work with CSP?
+
+A. Yes, it works great and is actually safer than regular `onClick=` because the named attributes have to be calling an existing function rather than arbitrary JS. (Expansion of this answer is welcome!)
+
+#### Q. What events can I bind to?
+
+A. They're listed at the top of `popstart.js`, but you can remove ones you don't care about or add new ones, even ones that don't actually exist:
+
+	BoundEventNames:['click','change','input','focus','blur','keyup','submit','mouseover','mouseout'],
+
+
+
+## Who wrote this?
 
 Popstart is copyright Popchat® Inc., a new chat startup based in Texas USA. First publication was Sept. 13, 2023.
