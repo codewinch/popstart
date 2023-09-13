@@ -1,19 +1,12 @@
 # Popstart
 
-Popstart is a library for rapid JS front-end development. 
+Popstart is a library for rapid JS front-end development (MIT)
 This is a brand-new project, CONTRIBUTIONS GREATLY APPRECIATED!
 
 ## What is Popstart™?
 
-Popstart is an open sourced (MIT license) library for rapid Javascript front-end development.
-
-There are no dependencies and no build process. It's simple and lightweight. There is no shadow DOM, no virtual DOM diffing, and function binding is optimized for larger applications.
-
-Popstart offers a straightforward visual representation of exactly what events are tied to which objects and it's very fast, even with thousands of objects on-screen and off. It's optimized for SPA's, but works well with page-oriented applications as well.
-
-Here's an example to send a completed form to the server via AJAX:
-
 ```javascript
+<!-- On form submit, scrape to JSON and POST to server: -->
 <form submit=__.scrape,__.show,__.post,__.hide
     scrape-selector=".example .form"
     show-selector=".example .spinner"
@@ -21,6 +14,17 @@ Here's an example to send a completed form to the server via AJAX:
     post-error=__.hide
     hide-selector=".example .spinner">
 ```
+
+## Features
+
+Popstart offers a straightforward visual representation of exactly what events are tied to which objects and it's very fast, even with thousands of objects on-screen and off.
+
+* no dependencies
+* no build process
+* fast, simple, and lightweight
+* No shadow DOM and no virtual DOM diffing
+* Automatic function binding is optimized for larger apps
+* optimized for SPA's, but also works well with page-oriented applications
 
 
 ## How it Works
