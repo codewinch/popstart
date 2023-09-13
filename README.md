@@ -1,12 +1,12 @@
 # Popstart
 
+This is a brand-new project, CONTRIBUTIONS GREATLY APPRECIATED!
+
 ## What is Popstart?
 
-Popstart™ is an open sourced (MIT license) library for rapid Javascript
-development from Popchat®, a new chat startup.
+Popstart™ is an open sourced (MIT license) library for rapid Javascript development.
 
-There are no dependencies and no build process. It's simple and lightweight.
-There is no shadow DOM, no virtual DOM diffing, and function binding is optimized for larger applications.
+There are no dependencies and no build process. It's simple and lightweight. There is no shadow DOM, no virtual DOM diffing, and function binding is optimized for larger applications.
 
 Popstart offers a straightforward visual representation of exactly what events are tied to which objects and it's very fast, even with thousands of objects on-screen and off. It's optimized for SPA's, but works well with page-oriented applications as well.
 
@@ -193,7 +193,24 @@ A `<form submit=...>` tag could be added to this as well, or a
 non-form `<button click=...>` instead.
 
 
-## Layout
+## Getting Started
 
-Core functionality is found in `popstart.js`, while extra utilities are
-in `popstart-utils.js`.
+Download `popstart.js`, `popstart-utils.js` (if desired), and any helpers you need (or just clone this repository) and just add to the end of your HTML:
+
+```html
+<script src=/js/popstart/popstart.js>
+<script src=/js/popstart/popstart-utils.js>
+<script src=/js/popstart/helpers/recaptcha.js>
+```
+
+## Contributing
+
+Please submit a pull request to the main branch.
+
+## LICENSE
+
+Popstart is MIT licensed.
+
+## Who?
+
+Popstart is copyright Popchat® Inc., a new chat startup based in Texas USA. First publication was Sept. 13, 2023.
