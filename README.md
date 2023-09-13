@@ -6,7 +6,7 @@ This is a brand-new project, CONTRIBUTIONS GREATLY APPRECIATED!
 ## What is Popstart™?
 
 ```html
-<!-- On form submit, scrape to JSON and POST to server: -->
+<!-- When form is submitted, scrape to JSON and POST to server with default error handler -->
 <form submit=__.scrape,__.show,__.post,__.hide
     scrape-selector=".example .form"
     show-selector=".example .spinner"
