@@ -1,10 +1,12 @@
 # Popstart
 
+Popstart is a library for rapid JS front-end development.
+
 This is a brand-new project, CONTRIBUTIONS GREATLY APPRECIATED!
 
-## What is Popstart?
+## What is Popstart™?
 
-Popstart™ is an open sourced (MIT license) library for rapid Javascript development.
+Popstart is an open sourced (MIT license) library for rapid Javascript front-end development.
 
 There are no dependencies and no build process. It's simple and lightweight. There is no shadow DOM, no virtual DOM diffing, and function binding is optimized for larger applications.
 
