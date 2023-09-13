@@ -5,7 +5,7 @@ This is a brand-new project, CONTRIBUTIONS GREATLY APPRECIATED!
 
 ## What is Popstart™?
 
-```javascript
+```html
 <!-- On form submit, scrape to JSON and POST to server: -->
 <form submit=__.scrape,__.show,__.post,__.hide
     scrape-selector=".example .form"
