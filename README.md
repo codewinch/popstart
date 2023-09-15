@@ -1,9 +1,29 @@
 # Popstart
 
-Popstart is a library for rapid JS front-end development (MIT)
-This is a brand-new project, CONTRIBUTIONS GREATLY APPRECIATED!
+Popstart is a Javascript library that leverages promises to let you embed entire workflows in HTML.
 
 ## What is Popstart™?
+
+**Simple example using an example function:**
+
+```html
+<script>
+function hello(name) {
+    alert("Hello, " + name);
+}
+</script>
+<button click=hello hello-name=world>Hello</button>
+```
+
+(argument names are parsed from your function signature and passed appropriately; if
+an argument is not specified, it will be passed into your function as `undefined`).
+
+**More complicated example using pre-build utility functions:**
+
+ *  scrapes a form and converts to JSON
+ *  shows a spinner
+ *  posts the JSON to a server on a particular URL
+ *  finally hides the spinner:
 
 ```html
 <!-- When form is submitted, scrape to JSON and POST to server with default error handler -->
@@ -15,19 +35,7 @@ This is a brand-new project, CONTRIBUTIONS GREATLY APPRECIATED!
     hide-selector=".example .spinner">
 ```
 
-## Features
-
-Popstart offers a straightforward visual representation of exactly what events are tied to which objects and it's very fast, even with thousands of objects on-screen and off.
-
-* no dependencies
-* no build process
-* fast, simple, and lightweight
-* No shadow DOM and no virtual DOM diffing
-* Automatic function binding is optimized for larger apps
-* optimized for SPA's, but also works well with page-oriented applications
-
-Popstart's power is in its function (promise) chaining and the ability to define a flow for what should happen during an event from start to finish, with automatic and customizable error handling as well.
-
+See more Examples below.
 
 ## How it Works
 
@@ -44,6 +52,20 @@ promise. All promises in a chain will be executed sequentially until a failure
 occurs.
 
 Most attributes would be in response to an event, such as `click=__.toggle`, but there are some special attributes. For example, `startup` causes the methods to be run after the page is loaded.
+
+
+## Features
+
+Popstart offers a straightforward visual representation of exactly what events are tied to which objects and it's very fast, even with thousands of objects on-screen and off.
+
+* no dependencies
+* no build process
+* fast, simple, and lightweight
+* No shadow DOM and no virtual DOM diffing
+* Automatic function binding is optimized for larger apps
+* optimized for SPA's, but also works well with page-oriented applications
+
+Popstart's power is in its function (promise) chaining and the ability to define a flow for what should happen during an event from start to finish, with automatic and customizable error handling as well.
 
 
 ## Examples
