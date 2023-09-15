@@ -39,19 +39,13 @@ See more Examples below.
 
 ## How it Works
 
-Popstart uses attributes inside of HTML to cause
-changes to occur within the page, AJAX requests to be made, etc.
+Popstart uses attributes inside of HTML to cause changes to occur within the page, AJAX requests to be made, etc.
 
-Each function listed such as `__.get()` will have its arguments automatically
-read from the HTML tag and applied in order.
+Each function listed such as `__.get()` will have its arguments automatically read from the HTML tag and applied in order.
 
-If the function returns a promise (like `__.get()`) then a failure in the
-promise will stop the function chain and cause the error flow to be executed
-instead. If a function does not return a promise, it will be wrapped in a
-promise. All promises in a chain will be executed sequentially until a failure
-occurs.
+If the function returns a promise (like `__.get()`) then a failure in the promise will stop the function chain and cause the error flow to be executed instead. If a function does not return a promise, it will be wrapped in a promise. All promises in a chain will be executed sequentially until a failure occurs.
 
-Most attributes would be in response to an event, such as `click=__.toggle`, but there are some special attributes. For example, `startup` causes the methods to be run after the page is loaded.
+Most attributes would be in response to an event, such as `click=__.toggle`, but there are some special events. For example, specifying `startup` (as shown in examples below) will cause the functions to be triggered as soon as the page is loaded. This is very useful for things like redirecting to a different page if the user isn't logged in or using `__.clone` to pre-populate a page structure with smaller pieces of HTML (both examples are shown below).
 
 
 ## Features
