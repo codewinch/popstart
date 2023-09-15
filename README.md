@@ -2,7 +2,7 @@
 
 Popstart is a Javascript library that leverages promises to let you embed entire workflows in HTML.
 
-## What is Popstart™?
+## What is Popstart?
 
 **Simple example using an example function:**
 
@@ -35,7 +35,7 @@ an argument is not specified, it will be passed into your function as `undefined
     hide-selector=".example .spinner">
 ```
 
-See more Examples below.
+See more [Examples](#examples) below.
 
 ## How it Works
 
@@ -262,4 +262,4 @@ A. They're listed at the top of `popstart.js`, but you can remove ones you don't
 
 ## Who wrote this?
 
-Popstart is copyright Popchat® Inc., a new chat startup based in Texas USA. First publication was Sept. 13, 2023.
+Popstart™ is copyright Popchat® Inc., a new chat startup based in Texas USA. First publication was Sept. 13, 2023.
