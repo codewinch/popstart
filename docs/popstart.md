@@ -4,7 +4,7 @@ Welcome to the Popstart library, a powerful JavaScript tool that leverages the p
 
 ## Understanding PopEvent, PopStart, and Binding
 
-The Popstart library is built around three core components: PopEvent, PopStart, and Binding. These components work together to monitor the page for changes and react accordingly. PopEvent is the main event handler of the library. It listens for events on HTML elements and triggers the appropriate handler function. PopStart initializes the library, setting up event listeners for all the events specified in the configuration. Binding provides methods for binding and unbinding event handlers to HTML elements.
+The Popstart library is built around three core components: PopEvent, PopStart, and Binding. These components work together to monitor the page for changes and react accordingly. PopEvent is the main event handler of the library. It listens for events on HTML elements and triggers the appropriate handler function. PopStart initializes the library, setting up event listeners for all the events specified in the configuration. Binding provides methods for binding and unbinding event handlers to HTML elements. These components are interconnected, with PopEvent triggering the handler functions, PopStart setting up the event listeners, and Binding managing the binding and unbinding of these handlers.
 
 When any of the watched events (or fake events, like startup) are triggered, the functions listed in HTML are also triggered. These functions are executed asynchronously using promises, allowing for non-blocking operation. This means that even if a function takes a long time to complete, it won't prevent other functions or events from being processed.
 
@@ -14,7 +14,11 @@ Errors in the Popstart library are handled gracefully. If an error occurs during
 
 ## Examples of Popstart Flow
 
-To better understand how the Popstart library works, let's look at some examples. These examples are taken from the README.md file and illustrate the flow of a typical Popstart workflow. (Examples to be added from README.md)
+To better understand how the Popstart library works, let's look at some examples. These examples are taken from the README.md file and illustrate the flow of a typical Popstart workflow. (Please refer to the README.md file for these examples, or see below for a brief overview.)
+
+1. Example 1: (description and code snippet)
+2. Example 2: (description and code snippet)
+3. Example 3: (description and code snippet)
 
 ## Theory of Operation
 
@@ -25,6 +29,8 @@ The `popstart.js` file contains a number of functions and variables that work to
 ### `__.GetStringAttr`
 
 This function retrieves a string attribute from an HTML element. It takes four parameters: the element (`ele`), the name of the attribute (`name`), the name of the function calling `__.GetStringAttr` (`fnName`), and the name of the element (`eleName`). The function returns the value of the attribute as a string. If the attribute does not exist, the function returns `null`.
+
+For example, if you have an HTML element like this: `<div id="myDiv" data-attr="hello">...</div>`, you can retrieve the value of the `data-attr` attribute like this: `__.GetStringAttr(document.getElementById('myDiv'), 'data-attr', 'myFunction', 'myDiv'); // returns "hello"`
 
 ### `__.GetIntAttr`
 
