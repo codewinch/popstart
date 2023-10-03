@@ -435,7 +435,7 @@ __.CheckAndStop=(ev, el, elName)=>{
 __.PopEvent=function(ev){
 
 	// do not replace with arrow function because `this` is needed
-	// Handler is actually called with a single argument, the event.
+	// PopEvent is actually called with a single argument, the event.
 	// `this` is passed in as the element, which is then used to
 	// find the function name(s) to call.  The function name(s) are then
 	// looked up in the window object and a promise is created for each
