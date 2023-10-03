@@ -8,11 +8,7 @@ branch: 'main'
 gha_enabled: True
 
 # This is the description of your project. It will be used by sweep when creating PRs. You can tell Sweep what's unique about your project, what frameworks you use, or anything else you want.
-#
-# Example:
-#
-# description: sweepai/sweep is a python project. The main api endpoints are in sweepai/api.py. Write code that adheres to PEP8.
-description: ''
+description: 'Popstart is a Javascript library that leverages promises to let you embed entire workflows in HTML. Write code with tabs and minimize white space between words. Minimize commenting inside the javascript files themselves and instead comment in docs/ documentation.'
 
 # This sets whether to create pull requests as drafts. If this is set to True, then all pull requests will be created as drafts and GitHub Actions will not be triggered.
 draft: False
