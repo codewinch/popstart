@@ -18,7 +18,7 @@ function hello(name) {
 (argument names are parsed from your function signature and passed appropriately; if
 an argument is not specified, it will be passed into your function as `undefined`).
 
-**More complicated example using pre-build utility functions:**
+**More complicated example using pre-built utility functions in popstart-utils.js:**
 
  *  scrapes a form and converts to JSON
  *  shows a spinner
