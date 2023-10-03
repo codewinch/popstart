@@ -2,6 +2,20 @@
 
 Welcome to the Popstart library, a powerful JavaScript tool that leverages the power of promises to embed entire workflows directly into your HTML. This document provides a comprehensive overview of the `popstart.js` file, the beating heart of the library. Whether you're looking to modify, upgrade, or simply understand the inner workings of Popstart, you've come to the right place.
 
+## Understanding PopEvent, PopStart, and Binding
+
+The Popstart library is built around three core components: PopEvent, PopStart, and Binding. These components work together to monitor the page for changes and react accordingly. PopEvent is the main event handler of the library. It listens for events on HTML elements and triggers the appropriate handler function. PopStart initializes the library, setting up event listeners for all the events specified in the configuration. Binding provides methods for binding and unbinding event handlers to HTML elements.
+
+When any of the watched events (or fake events, like startup) are triggered, the functions listed in HTML are also triggered. These functions are executed asynchronously using promises, allowing for non-blocking operation. This means that even if a function takes a long time to complete, it won't prevent other functions or events from being processed.
+
+In the Popstart library, non-promise functions are automatically wrapped in a promise. This is done to ensure that all functions can be handled in the same way, regardless of whether they return a promise or not. By wrapping non-promise functions in a promise, they can be used in the same asynchronous manner as promise-based functions.
+
+Errors in the Popstart library are handled gracefully. If an error occurs during the execution of a function, it is caught and logged to the console. This allows for easier debugging and ensures that a single error won't bring down the entire workflow.
+
+## Examples of Popstart Flow
+
+To better understand how the Popstart library works, let's look at some examples. These examples are taken from the README.md file and illustrate the flow of a typical Popstart workflow. (Examples to be added from README.md)
+
 ## Theory of Operation
 
 The `popstart.js` file contains a number of functions and variables that work together to enable the embedding of workflows in HTML using promises. The library listens for certain events on HTML elements and triggers corresponding functions, which are executed asynchronously using promises.
